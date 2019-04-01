@@ -1,13 +1,11 @@
 {
-  "name": "app-javascript",
-  "devPort": 10242,
+  "name": "{{ name }}",
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report --target lib --formats umd-min ./src/main.js"
   },
   "dependencies": {
-    "qs": "^6.7.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.2",
     "vuex": "^3.1.0"
