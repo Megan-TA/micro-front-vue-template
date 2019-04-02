@@ -1,6 +1,7 @@
 {
   "name": "{{ name }}",
-  "version": "0.1.0",
+  "devPort": "{{ devPort }}",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report --target lib --formats umd-min ./src/main.js"
