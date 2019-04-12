@@ -3,7 +3,7 @@ const InsertScriptPlugin = require('./scripts/InsertScriptWebpackPlugin')
 const APP_NAME = require('./package.json').name
 const PORT = require('./package.json').devPort
 const PROXY = require('./config/proxy')
-const modules = require('./src/modules')
+const modules = require('./scripts/modules')
 
 log('APP_NAME: ', APP_NAME)
 
