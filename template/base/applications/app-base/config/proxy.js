@@ -1,5 +1,5 @@
 module.exports = {
-  // '/app-javascript/': {
+  // '/app-user/': {
   //   target: 'http://localhost:10242/'
   // }
 }

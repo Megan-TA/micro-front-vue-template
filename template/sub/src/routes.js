@@ -10,17 +10,17 @@ export default [
   {
     path: `/${APP_NAME}`,
     name: APP_NAME,
-    redirect: { name: `${APP_NAME}.home` },
+    redirect: { name: `${APP_NAME}_home` },
     component: App,
     children: [
       {
         path: 'home',
-        name: `${APP_NAME}.home`,
+        name: `${APP_NAME}_home`,
         component: Home,
       },
       {
         path: 'about',
-        name: `${APP_NAME}.about`,
+        name: `${APP_NAME}_about`,
         component: About,
       },
     ],

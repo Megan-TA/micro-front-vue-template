@@ -10,7 +10,7 @@ export default new Router({
   routes: Object.values(routes).reduce((acc, prev) => acc.concat(prev), [
     {
       path: '/',
-      redirect: '/app-javascript'
+      redirect: '/app-user'
     }
   ])
 })

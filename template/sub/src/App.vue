@@ -1,8 +1,9 @@
 <template>
   <div class="app">
     <div class="nav">
-      <router-link to="/app-javascript/home">Home</router-link> |
-      <router-link to="/app-javascript/about">About</router-link>
+      <router-link v-for = 'item in routes' :key = 'item.name' :to='item.path' class = 'nav__item'>
+        {{ item.name }}
+      </router-link>
     </div>
     <router-view />
   </div>
@@ -11,7 +12,15 @@
 <script>
 import './base';
 
-export default {};
+export default {
+   data () {
+          return {
+              routes: [
+                  { name: '测试地址1', path: '/app-user/test' }
+              ]
+          }
+      }
+};
 </script>
 
 

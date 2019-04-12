@@ -5,10 +5,7 @@ const PORT = require('./package.json').devPort
 const PROXY = require('./config/proxy')
 const modules = require('./src/modules')
 
-const NODE_ENV = process.env.NODE_ENV || 'development'
-
 log('APP_NAME: ', APP_NAME)
-log('NODE_ENV: ', NODE_ENV)
 
 module.exports = {
   publicPath: './',
@@ -31,6 +28,7 @@ module.exports = {
 
   devServer: {
     port: PORT,
+    disableHostCheck: true,
     proxy: PROXY
   }
 }

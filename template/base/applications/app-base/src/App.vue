@@ -15,16 +15,15 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      routes: [
-        { name: '/app-typescript', title: 'app-typescript' },
-        { name: '/app-javascript', title: 'app-javascript' }
-      ]
+    export default {
+        data () {
+            return {
+                routes: [
+                    { name: '/app-user', title: 'app-user' }
+                ]
+            }
+        }
     }
-  }
-}
 </script>
 <style>
 #app {
