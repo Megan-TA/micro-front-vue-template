@@ -1,7 +1,11 @@
 <template>
   <div class="app">
     <div class="nav">
-      <router-link v-for = 'item in routes' :key = 'item.name' :to='item.path' class = 'nav__item'>
+      <router-link
+        v-for = 'item in routes'
+        :key = 'item.name'
+        :to='item.path'
+        class = 'nav__item'>
         {{ item.name }}
       </router-link>
     </div>
@@ -29,7 +33,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 .nav {
